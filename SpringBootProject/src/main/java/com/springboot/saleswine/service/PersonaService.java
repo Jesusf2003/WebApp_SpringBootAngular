@@ -17,16 +17,18 @@ import com.springboot.saleswine.modelo.Persona;
 public class PersonaService implements PersonaRepository{
 	
 	@Autowired
-	private PersonaService perServ;
+	private PersonaRepository perRepo;
 
 	@Override
 	public List<Persona> findAll() {
-		return perServ.findAll();
+		// TODO Auto-generated method stub
+		return perRepo.findAll();
 	}
 
 	@Override
 	public List<Persona> findAll(Sort sort) {
-		return perServ.findAll(sort);
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
@@ -115,12 +117,14 @@ public class PersonaService implements PersonaRepository{
 
 	@Override
 	public void deleteById(Long id) {
-		perServ.deleteById(id);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
 	public void delete(Persona entity) {
-		perServ.delete(entity);
+		// TODO Auto-generated method stub
+		
 	}
 
 	@Override
@@ -158,4 +162,5 @@ public class PersonaService implements PersonaRepository{
 		// TODO Auto-generated method stub
 		return false;
 	}
+	
 }

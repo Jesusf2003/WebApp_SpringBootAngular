@@ -34,3 +34,15 @@ programando en Eclipse con SpringBoot.
 - JSON editor plugin.
 - Jmr Code Generator for Java, JavaEE, SpringBoot
 - JBoss tools.
+
+## Proyecto de Angular
+
+- El proyecto se creó usando la opción de enrutamiento, sin embargo,
+  esto es opcional para trabajar con el API REST creado en Spring Boot.
+
+- Se está usando los estilos en CSS.
+
+- Para compilar el proyecto, debes abrir el terminal de la computadora
+  CMD o crear uno en Visual Studio Code y ejecutar el siguiente comando: ng serve --open.
+
+- Para cerrarlo solamente debes hacer ctrl + c en el terminal.

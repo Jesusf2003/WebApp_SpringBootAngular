@@ -17,16 +17,16 @@ import com.springboot.saleswine.modelo.Ubigeo;
 public class UbigeoService implements UbigeoRepository{
 	
 	@Autowired
-	private UbigeoRepository ubiServ;
+	private UbigeoRepository ubiRepo;
 
 	@Override
 	public List<Ubigeo> findAll() {
-		return ubiServ.findAll();
+		return ubiRepo.findAll();
 	}
 
 	@Override
 	public List<Ubigeo> findAll(Sort sort) {
-		return ubiServ.findAll(sort);
+		return ubiRepo.findAll(sort);
 	}
 
 	@Override
@@ -120,7 +120,7 @@ public class UbigeoService implements UbigeoRepository{
 
 	@Override
 	public void delete(Ubigeo entity) {
-		ubiServ.delete(entity);
+		ubiRepo.delete(entity);
 	}
 
 	@Override

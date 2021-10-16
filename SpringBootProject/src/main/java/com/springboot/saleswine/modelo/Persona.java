@@ -8,7 +8,7 @@ public class Persona {
 	
 	@Id
 	@SequenceGenerator(name = "seqPER", sequenceName = "INCPERSONA", allocationSize = 1)
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seaPER")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPER")
 	@Column(name = "CODPER")
 	private int codPer;
 	
@@ -139,23 +139,6 @@ public class Persona {
 	}
 
 	public void setCodUbi(Ubigeo codUbi) {
-		this.codUbi = codUbi;
-	}
-
-	public Persona(int codPer, String nombre, String apellido, String user, String password, String celular, String dni,
-			String estado, String mail, String direc, String rol, Ubigeo codUbi) {
-		super();
-		this.codPer = codPer;
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.user = user;
-		this.password = password;
-		this.celular = celular;
-		this.dni = dni;
-		this.estado = estado;
-		this.mail = mail;
-		this.direc = direc;
-		this.rol = rol;
 		this.codUbi = codUbi;
 	}
 }

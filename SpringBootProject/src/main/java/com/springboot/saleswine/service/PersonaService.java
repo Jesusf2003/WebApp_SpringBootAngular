@@ -21,13 +21,11 @@ public class PersonaService implements PersonaRepository{
 
 	@Override
 	public List<Persona> findAll() {
-		// TODO Auto-generated method stub
 		return perRepo.findAll();
 	}
 
 	@Override
 	public List<Persona> findAll(Sort sort) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

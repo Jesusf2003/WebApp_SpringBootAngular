@@ -10,6 +10,7 @@ import { PersonaService } from './services/persona/persona.service';
 export class AppComponent implements OnInit {
   personaForm!: FormGroup;
   persona: any;
+  ubigeo: any;
   constructor(
     public fb: FormBuilder,
     public UbigeoService: UbigeoService,
@@ -28,11 +29,19 @@ export class AppComponent implements OnInit {
       mail: ['', Validators.required],
       direc: ['', Validators.required],
       rol: ['', Validators.required],
+      codUbi: ['', Validators.required]
     });
+
     this.PersonaService.getAllPersonas().subscribe(resp => {
       this.persona = resp;
     },
       error => { console.error(error)}
+    );
+
+    this.UbigeoService.getAllUbigeo().subscribe(resp => {
+      this.ubigeo = resp;
+    },
+      error => { console.error(error) }
     );
   }
 }

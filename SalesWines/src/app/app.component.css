@@ -2,3 +2,10 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.footerAngular{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+}

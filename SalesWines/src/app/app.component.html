@@ -1,16 +1,27 @@
+<nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      Sales Wines
+    </a>
+  </div>
+</nav>
+<br/>
+<br/>
+<br/>
 <div class="formularioRegistro">
   <h2>Registro de personas</h2>
   <table class="table table-hover">
-    <thead>
+    <thead class="table-dark">
       <tr>
         <th>ID</th>
-        <th>Nombres y apellidos</th>
+        <th>Apellidos y Nombres</th>
         <th>Celular</th>
-        <th>Dni</th>
-        <th>Estado</th>
+        <th>DNI</th>
         <th>Correo</th>
         <th>Dirección</th>
+        <th>UBIGEO</th>
         <th>Rol</th>
+        <th>Estado</th>
       </tr>
     </thead>
     <tbody>
@@ -19,13 +30,18 @@
         <td>{{item.apellido}}, {{item.nombre}}</td>
         <td>{{item.celular}}</td>
         <td>{{item.dni}}</td>
-        <td>{{item.estado}}</td>
         <td>{{item.mail}}</td>
         <td>{{item.direc}}</td>
+        <td>{{item.codUbi.dep}}, {{item.codUbi.pro}}, {{item.codUbi.dis}}</td>
         <td>{{item.rol}}</td>
+        <td>{{item.estado}}</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<footer class="footerAngular bg-primary">
+  <p style="margin-top: 10%;">Elaborado por: Fernando Canales Rodríguez</p>
+</footer>
 
 <router-outlet></router-outlet>
